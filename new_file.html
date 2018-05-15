@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>0154185 易汀 人机交互作业</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+
+	<style>
+		body {
+			/*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f2bc), to(#bee57e));*/
+			background: #f4ebb2;
+		}
+		
+		@media screen and (min-width: 0px) and (max-width: 768px) {
+			.nav_2 {}
+			.pho_log {
+				display: none;
+			}
+			.ten_img {
+				display: none;
+			}
+			.nav_2_img {
+				display: none;
+			}
+			.uesr_login{
+				
+			}
+			.nav_2_ma li{
+				font-size: 17px;
+			}
+			.nav_2_img_2{
+				background: #000000;
+			}
+			.nav_2 {
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4ebb2), to(#bee57e));
+			border-radius: 0 0 50px 50px;
+			}
+			.main {
+				width: 100%;
+			}
+			.toppage {
+				margin-top: -22px;
+			}
+			.dra_img {
+				display: none;
+			}
+			.dra_img_2 {
+				background: url(img/911.jpg) ;
+				background-size: cover;
+				margin-left: 35px;
+				border-radius: 80px;
+				margin-top: 15px;
+				/*border: 10px solid #F12B0E;*/
+				/*display: none;*/
+			}
+			h2 {
+			text-shadow: #000000 0px 3px 6px;
+			/*font-size: 28px;*/
+			color: #ffac02;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #FFFFFF;
+			margin: 10px 0 0 0px;
+		}
+		
+		h3 {
+			text-shadow: #000000 0px 3px 6px;
+			/*font-size: 24px;*/
+			color: #2d4e6f;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #FFFFFF;
+			margin: 10px 0 0 0;
+		}
+		
+		h4 {
+			text-shadow: #000000 0px 3px 6px;
+			/*font-size: 24px;*/
+			color: #4f9be5;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #FFFFFF;
+			margin: 10px 100px 0 0px;
+		}
+		
+		h5 {
+			text-shadow: #000000 0px 5px 0px;
+			/*font-size: 28px;*/
+			color: #ffdb00;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #000000;
+			margin: 10px 0 0 15px;
+		}
+		
+		h6 {
+			/*font-size: 9px;*/
+			color: #000000;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			margin: 20px 0 20px 20px;
+		}
+			.gg_img{
+				display: none;
+			}
+			.game_news {
+				display: none;
+			}
+			.denglu {
+				display: none;
+			}
+			.game_load {
+				margin-top: 20px;
+			}
+			.footpage {
+				background: url(img/902_副本.jpg) no-repeat;
+				background-size: cover;
+			}
+			.foot_img {
+				display: none;
+			}
+			.footpage_peo {
+				overflow: hidden;
+			}
+			.footpage{
+				margin-top: -11px;
+			}
+			.foot_words{
+				margin-bottom: 10px;
+				margin-left: 30px;
+			}
+			.game_video{
+				display: none;
+			}
+			.game_gg{
+				display: none;
+				margin:15px 0 0 15px;
+				
+			}
+			.game_cut{
+				margin: 15px 0 0 3px;
+			}
+		}
+		
+		@media screen and (min-width: 768px) and (max-width: 992px) {
+			.nav_img {
+				display: none;
+			}
+			.nav_1_wo{
+				font-size: 9px;
+			}
+			.nav_2 {
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#05b371), to(#bee57e));
+			border-radius: 0 0 50px 50px;
+			}
+			
+			.nav_2_img {}
+			.nav_2_img_2{
+				display: none;
+			}
+			.nav_2_ma li{
+				margin-left: 3px;
+				font-size: 12px;
+			}
+			.ten_img {
+				margin: 0 0 0 -80px;
+			}
+			.main {
+				width: 100%;
+			}
+			.toppage {
+				margin-top: -22px;
+				background: url(img/903.jpg) no-repeat;
+			}
+			.toppage_m {
+				margin-left: 40px;
+			}
+			.uesr_login {
+				margin: -50px 0 0 -50px;
+			}
+			.small_dl {
+				/*background: url(img/904.jpg) no-repeat;*/
+				margin: -10px 0 0 -30px;
+			}
+			.denglu{
+				margin: 0 0 0 -30px;
+			}
+			.dra_img {
+				margin-left: -20px;
+				background: url(img/911.jpg) no-repeat;
+				border: 10px solid #F12B0E;
+			}
+			.dra_img_2 {
+				display: none;
+			}
+			.btn_size{
+				font-size: 10px;
+			}
+			h2 {
+			text-shadow: #000000 0px 3px 6px;
+			/*font-size: 28px;*/
+			color: #ffac02;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #FFFFFF;
+			margin: 10px 0 0 0px;
+		}
+		
+		h3 {
+			text-shadow: #000000 0px 3px 6px;
+			/*font-size: 24px;*/
+			color: #2d4e6f;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #FFFFFF;
+			margin: 10px 0 0 0;
+		}
+		
+		h4 {
+			text-shadow: #000000 0px 3px 6px;
+			/*font-size: 24px;*/
+			color: #4f9be5;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #FFFFFF;
+			margin: 10px 100px 0 0px;
+		}
+		
+		h5 {
+			text-shadow: #000000 0px 5px 0px;
+			/*font-size: 28px;*/
+			color: #ffdb00;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			-webkit-text-stroke: 1px #000000;
+			margin: 10px 0 0 15px;
+		}
+		
+		h6 {
+			/*font-size: 9px;*/
+			color: #000000;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			/*float: left;*/
+			margin: 20px 0 20px 20px;
+		}
+		.time_go{
+			font-size: 8px;
+		}
+		.input_len {
+				width: 130px;
+				/*background-color: #8d4019;*/
+			}
+		.login_small {
+				position: absolute;
+				width: 160px;
+				z-index: 1;
+				margin: -65px 0px 0 35.5px;
+				background-color: #c2871b;
+			}
+			.dl_button{
+				margin:0 0 0 35px ;
+			}
+			.uesr_login_g {
+			width: 160px;
+			height: 100px;
+			background-color: #c2871b;
+			position: absolute;
+			margin: 0 0 0 15.5px;
+			}
+			.footpage{
+				margin: -25px 0 0 0;
+			}
+			.game_gg{
+				/*margin-left: 50px;*/
+				margin-top: 20px;
+			}
+			.gg_img{
+				display: none;
+			}
+			.game_video{
+				margin-top: 20px;
+				margin-left: 60px;
+			}
+			.game_cut{
+				margin-top: 30px;
+			}
+			.game_load{
+				margin-top: 30px;
+			}
+			.footpage {
+				background: url(img/902_副本.jpg);
+			}
+			.foot_words{
+				margin-bottom: 10px;
+				margin-left: 60px;
+			}
+		}/*end2*/
+		
+		@media only screen and (min-width: 992px) {
+			.main {
+				width: 983px;
+			}
+			.nav_2_img_2{
+				display: none;
+			}
+			.navbar_dirbar {
+				/*height: 20px;*/
+			}
+			.half_login {
+				margin-top: ;
+			}
+			.nav_2 {
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#05b371), to(#bee57e));
+			border-radius: 0 0 50px 50px;
+			}
+			.nav_2_ma {
+				margin-left: 30px;
+			}
+			.nav_2_po {
+				margin-left: 30px;
+				/*border-bottom: 10px solid #E9322D;*/
+			}
+			.nav_2_ma li {
+				margin-left: 10px;
+				font-size: 18px;
+			}
+			.nav_2 {
+				margin-bottom: 0;
+			}
+			.nav_2_img {
+				/*position: absolute;*/
+			}
+			.toppage {
+				margin-left: 0.2%;
+				margin-top: -20px;
+				background: url(img/903.jpg) no-repeat;
+			}
+			.uesr_login {
+				margin: -30px 0 0 -50px;
+			}
+			.login_small {
+				position: absolute;
+				width: 160px;
+				z-index: 1;
+				margin: -65px 0px 0 35.5px;
+				background-color: #c2871b;
+			}
+			.ls_small {}
+			.dra_img {
+				margin-left: -20px;
+				margin-top: 10px;
+				background: url(img/911.jpg) no-repeat;
+				border: 10px solid #F12B0E;
+			}
+			.dra_img_2 {
+				display: none;
+			}
+			.game_news {
+				/*margin-left: 90px;*/
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			.medpage {
+				/*background-color: #002A80;*/
+				margin-left: 40px;
+			}
+			.denglu {
+				/*background: url(img/905.png) no-repeat;*/
+				margin: 0px 0 0 -13px;
+			}
+			.uesr_login_g {
+			width: 160px;
+			height: 100px;
+			background-color: #c2871b;
+			}
+			.small_dl {
+				/*background: url(img/904.jpg) no-repeat;*/
+				margin: 0px 0 0 -13px;
+			}
+			.dl_button {
+				margin: 8px 0 0 40px;
+			}
+			.input_len {
+				width: 125px;
+				/*background-color: #8d4019;*/
+			}
+			.footpage {
+				width: 983px;
+				margin: -27px 0 0 19px;
+			}
+			.game_gg {
+				margin-bottom: 20px;
+				margin-left: -17px;
+			}
+			.game_video {
+				margin-left: 75px;
+			}
+			.game_cut {
+				margin-top: 40px;
+				margin-left: -25px;
+				background: #eeec8b;
+				border-radius: 15px;
+				border: 5px solid #eeec8b;
+				box-shadow: 0 0 20px 0.5px #777777;
+			}
+			.game_load {
+				margin-top: 20px;
+			}
+			.footpage {
+				background: url(img/902_副本.jpg);
+			}
+			.foot_words {
+				margin-bottom: 10px;
+				margin-top: -5px;
+				margin-left: 60px;
+				/*margin: 20px 0 0 0;*/
+			}
+			
+			.foot_nav {
+				margin-top: 5px;
+			}
+			h2 {
+				text-shadow: #000000 0px 3px 6px;
+				font-size: 28px;
+				color: #ffac02;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				/*float: left;*/
+				-webkit-text-stroke: 1px #FFFFFF;
+				margin: 10px 0 0 0px;
+			}
+			h3 {
+				text-shadow: #000000 0px 3px 6px;
+				font-size: 24px;
+				color: #2d4e6f;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				float: left;
+				-webkit-text-stroke: 1px #FFFFFF;
+				margin: 10px 0 0 0;
+			}
+			h4 {
+				text-shadow: #000000 0px 3px 6px;
+				font-size: 24px;
+				color: #4f9be5;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				/*float: left;*/
+				-webkit-text-stroke: 1px #FFFFFF;
+				margin: 10px 130px 0 0px;
+			}
+			h5 {
+				text-shadow: #000000 0px 5px 0px;
+				font-size: 28px;
+				color: #ffdb00;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				/*float: left;*/
+				-webkit-text-stroke: 1px #000000;
+				margin: 10px 0 0 15px;
+			}
+			h6 {
+				font-size: 9px;
+				color: #000000;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				/*float: left;*/
+				margin: 20px 0 20px 60px;
+			}
+			.time_go{
+			font-size: 11px;
+			}
+		}
+		/*//end*/
+		
+		.toppage {}
+		
+		.game_news {}
+		
+		
+		
+		.nav_1 {
+			border-bottom: 3px solid #E9322D;
+		}
+		
+		.nav_1_wo {
+			
+		}
+		
+		.nav_2 {
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#05b371), to(#bee57e));
+			border-radius: 0 0 50px 50px;
+		}
+		
+		.nav_2_ma li {
+			font-weight: bold;
+			font-family: "微软雅黑";
+			
+			text-shadow: #000000 0px 2px 10px;
+			border: none;
+			/*-webkit-text-stroke: 1px #FFFFFF;*/
+			/*color:#002A80;*/
+		}
+		
+		.dra_img {
+			border-radius: 80px;
+		}
+		
+		
+		
+		.foot_nav {}
+		
+		.foot_nav ul {}
+		
+		.foot_nav ul a li {
+			display: inline;
+			color: #ffe89a;
+			font-size: 12px;
+			border-right: 1px solid #b3aca8;
+			padding-right: 2px;
+			/*border-bottom: 1px solid #b3aca8;*/
+		}
+		
+		.foot_words {
+			/*margin-left: 60px;*/
+			border-top: 1px solid #b3aca8;
+		}
+		
+		.foot_words a:hover {
+			text-decoration: none;
+		}
+		
+		.foot_words a li {
+			color: #b3aca8;
+			font-size: 10px;
+			list-style-type: none;
+			float: left;
+		}
+		
+		.medpage {
+			/*margin-left: 10px;*/
+		}
+		
+		.foot_step {
+			margin: 30px 0 0 0;
+		}
+		
+		.span_1 {
+			color: #318b73;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			font-size: 17px;
+			float: left;
+		}
+		
+		.span_2 {
+			color: black;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			font-size: 17px;
+			float: left;
+		}
+		
+		.span_3 {
+			color: black;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			font-size: 10px;
+			float: right;
+		}
+		
+		.news_top {
+			border-top: 1px solid #000000;
+		}
+		
+		.news_med {
+			border-top: 2px solid #000000;
+			margin-top: 30px;
+		}
+		
+		.news_words_1 {
+			/*margin-top: 1px;*/
+			float: left;
+			margin-top: 5px;
+		}
+		
+		.news_words_1 a {
+			font-size: 11px;
+			border-right: 1px solid gray;
+			color: #5a6542;
+		}
+		
+		.news_words_2 {
+			/*margin-top: 1px;*/
+			float: left;
+			margin-bottom: 5px;
+		}
+		
+		.news_words_2 a {
+			font-size: 11px;
+			border-right: 1px solid gray;
+			color: #5a6542;
+		}
+		
+		.game_gg {
+			background: url(img/914.jpg) no-repeat;
+		}
+		
+		.game_li {
+			margin-top: 60px;
+		}
+		
+		.game_li a li {
+			/*font-size: 10px;*/
+			list-style-type: none;
+			float: left;
+			color: #877142;
+		}
+		
+		.game_li a li:hover {
+			text-decoration: underline;
+		}
+		
+		.game_img img {}
+		
+		.video_top {
+			border-top: 1px solid #000000;
+			/*border-bottom: 2px solid #000000;*/
+		}
+		
+		.video_words {
+			margin-left: px;
+		}
+		
+		.video_words a li {
+			font-size: 11px;
+			list-style-type: none;
+			color: #6a7f83;
+			/*float: left;*/
+			/*display: inline;*/
+		}
+		
+		.under_none:hover {
+			text-decoration: none;
+		}
+	</style>
+
+	<body>
+		<center>
+			<div class="main">
+				<nav class="navbar navbar-default nav_1" role="navigation" style="border-radius:0px ;">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+							<a style="margin-bottom: 5px;margin-right: 10px;" class="nav_img navbar-brand" href="#"><img src="img/901.png" /> </a>
+						</div>
+						<div class="nav_1_wo collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav ">
+								<!--<li>
+								<a style="border: none;"><img src="img/901.png" /> </a>
+							</li>-->
+								<li>
+									<a class="nav_1_wo" style="color: #000;" href="#" title="">博客</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">视频</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">音乐</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">游戏</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">娱乐</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">图酷</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">相册</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">社区</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">体育</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">时尚</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" title="">商城</a>
+								</li>
+								<li>
+									<a style="color: #000;" href="#" style="border: none;" title="">俱乐部</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="row toppage">
+					<div class="toppage_m">
+						<div class=" col-sm-3 col-sm-3 col-md-3">
+							<a class="ten_img"><img class="img-responsive" src="img/906.png " /> </a>
+						</div>
+						<div class="col-xs-12 col-sm-9 col-md-8 nav_2_po" style="position: relative;">
+							<a class="nav_2_img_2 "><img class="img-responsive" src="img/907.png " /> </a>
+							<nav class="navbar navbar-default nav_2" style="border: none;" role="navigation ">
+								<div class="container-fluid ">
+									<div>
+										<ul class="nav navbar-nav nav_2_ma ">
+											<li>
+												<a href="# ">首页</a>
+											</li>
+											<li>
+												<a href="# ">游戏先驱</a>
+											</li>
+											<li>
+												<a href="# ">游戏社区</a>
+											</li>
+											<li>
+												<a href="# ">队伍</a>
+											</li>
+											<li>
+												<a href="# ">下载</a>
+											</li>
+											<li>
+												<a href="# " style="border: none; ">帮助服务</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+							<a class="nav_2_img "><img class="img-responsive" src="img/907.png " /> </a>
+						</div>
+
+						<div class="col-xs-12 col-sm-4 col-md-4 uesr_login ">
+
+							<div class="pho_game col-xs-12 col-sm-12 col-md-12 ">
+								<img class="img-responsive" src="img/908.png " />
+							</div>
+							<div class="col-xs-12 col-md-12 ">
+								<div class="row uesr_login_g">
+									<!--<div class="col-xs-12 col-sm-12 col-md-12 "></div>-->
+									<div class="col-xs-12 "><img src="img/909.png " /><span style="color: #883b00;text-shadow:#FFFFFF 0px 0px 6px;font-weight: bold;">用户登录</span></div>
+									<div class="col-xs-12 col-sm-12 col-md-12 ">
+
+										<input class="input_len" placeholder="用户 " />
+										<input class="input_len" placeholder="密码 " />
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div></div>
+
+						<div class="col-xs-10 col-sm-4 col-md-4 dra_img ">
+							<div>
+								<h2>超可爱</h2>
+								<h3>宠物龙</h3>
+								<h4>登场</h4>
+								<h5>给你百分之百的新鲜</h5>
+								<h6>活动时间：1月18日-2月18日</h6>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 game_news ">
+							<div>
+								<div class="news_top">
+									<span class="span_1">游戏</span>
+									<span class="span_2">新闻</span>
+									<span class="span_3">MORE+</span>
+								</div>
+								<div class="news_med">
+									<div style="margin-top: 9px;">
+										<img style="float: left;" src="img/912.jpg" />
+										<a class="time_go" style="font-size: 6px; color: #5a6542; ">锦瑟无语，人亦忘言。光阴荏苒，时光丝毫不会因为我们的挽留放慢脚步。</a>
+									</div>
+								</div>
+								<div class="news_words_1">
+									<a style="border: none;"><img src="img/913.png" /></a>
+									<a href="#">[图文]&nbsp;游戏通关操作全解析</a>
+									<a class="under_none" style="border: none;">15-05-01</a>
+								</div>
+								<div class="news_words_2">
+									<a style="border: none;"><img src="img/913.png" /></a>
+									<a href="#">[公告]&nbsp;近期关于游戏无法登陆的说明</a>
+									<a class="under_none" style="border: none;">15-04-28</a>
+								</div>
+
+							</div>
+							<!--<img src="img/捕获.JPG " />-->
+						</div>
+					</div>
+				</div>
+
+				<div class="half_login row col-sm-3 col-md-3 ">
+					<!--//左下方登录框-->
+					<div class="small_dl col-sm-12 col-md-12 ">
+						<img class="pho_log" src="img/904.jpg" />
+						<div class="login_small ">
+							<div>
+								<span style="color: #401900; font-size: 10px;" class="col-xs-12 col-md-12 "><input type="checkbox" >记住账号</span>
+								<a href="# "><img src="img/910.jpg " /></a>
+							</div>
+						</div>
+					</div>
+					<div class="denglu col-sm-12 col-md-12 ">
+						<div class="dl_button" style="position: absolute;">
+							<button class="btn_size">新用户注册</button>
+							<button class="btn_size">密码？</button>
+						</div>
+						<img src="img/905.png " />
+					</div>
+				</div>
+				
+				<div class="col-xs-10 col-sm-4 col-md-4 dra_img_2 ">
+							<div>
+								<h2>超可爱</h2>
+								<h3>宠物龙</h3>
+								<h4>登场</h4>
+								<h5>给你百分之百的新鲜</h5>
+								<h6>活动时间：1月18日-2月18日</h6>
+							</div>
+
+				</div>
+				<div class="row medpage col-xs-12 col-sm-9 col-md-9  ">
+					<!--//中间四块-->
+					<div class="row col-xs-12 col-sm-5  col-md-5 col-sm-offset-1 game_gg">
+						<div class="col-xs-12 col-sm-12 col-md-10 game_li">
+							<a href="#">
+								<li style="font-size: 2px;">《斗舞团》排名 惊现“异型” </li>
+							</a>
+							<a href="#">
+								<li style="font-size: 8px;">《地龙》千万RMB道具 最后狂送</li>
+							</a>
+							<a href="#">
+								<li style="font-size: 8px;">《泪水之旅》BOSS学习新技能免费</li>
+							</a>
+							<a href="#">
+								<li style="font-size: 8px;">《电线跑车》带你游首尔</li>
+							</a>
+							<a href="#">
+								<li style="font-size: 8px;">某某某 出任《成年》中国代言</li>
+							</a>
+							<a href="#">
+								<li style="font-size: 8px;">《超舞》佛教泰国之旅今日启程</li>
+							</a>
+							<a style="margin-bottom: ;" href="#">
+								<li style="font-size: 8px;">《大富翁》奇迹是怎样炼成的</li>
+							</a>
+						</div>
+						<div class="gg_img col-md-2">
+							<img src="img/915.png " />
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-5 col-md-6 game_video">
+						<div>
+							<div class="video_top">
+								<span class="span_1">游戏</span>
+								<span class="span_2">视频</span>
+								<span class="span_3">MORE+</span>
+							</div>
+							<div class="row" style="margin-top: 30px;">
+								<div class="col-xs-6 col-sm-5 col-md-6">
+									<img class="img-responsive" src="img/916.jpg" />
+								</div>
+								<div class="col-xs-6 col-sm-7 col-md-6 video_words">
+									<a href="#">
+										<li>[美女]</li>
+									</a>
+									<a href="#">
+										<li>超级美女枪手的英姿</li>
+									</a>
+									<a href="#">
+										<li>美女玩游戏超可爱</li>
+									</a>
+									<a href="#">
+										<li>[录制]</li>
+									</a>
+									<a href="#">
+										<li>加拿大靓妹弹唱自拍</li>
+									</a>
+									<a href="#">
+										<li>爱玩极限运动的胖子</li>
+									</a>
+									<a href="#">
+										<li>[搞笑]</li>
+									</a>
+									<a href="#">
+										<li>超扭曲广播体操</li>
+									</a>
+									<a href="#">
+										<li>两战队对战盛况空前</li>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 ">
+						<div class="col-xs-12 col-sm-6 col-md-6 game_cut">
+							<div class="row " style="box-shadow: 0 0 10px -0.5px #dcdd94; border-radius: 15px; background: #e6ed98; border:1px solid #fff;">
+								<div class="col-xs-12 col-sm-12 col-md-12" style="border-bottom: 2px solid #b4a95f;">
+									<span class="span_1" style="color: #5f630e;">游戏</span>
+									<span class="span_2">截图</span>
+									<span class="span_3">MORE+</span>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 game_img" style="margin-top: 10px;margin-bottom: 15px;">
+									<a class="col-xs-4 col-sm-4" href="#"><img class="img-responsive" style=" padding-right: ;" src="img/917.jpg " /></a>
+									<a class="col-xs-4 col-sm-4" href="#"><img class="img-responsive" style=" padding-right: ;" src="img/918.jpg " /></a>
+									<a class="col-xs-4 col-sm-4" href="#"><img class="img-responsive" src="img/919.jpg " /></a>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-5 game_load">
+							<a href="#"><img class="img-responsive" src="img/920.png " /></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ">
+					<!--//底部-->
+					<div class="col-xs-12 col-sm-12 col-md-12 footpage_peo ">
+						<img class="img-responsive" src="img/921.png " />
+					</div>
+					<div class="row col-xs-12 col-sm-12 col-md-12 footpage ">
+						<div class="foot_step ">
+							<!--底部文字-->
+							<div class="col-xs-12 col-sm-2 col-md-3 foot_img ">
+								<img src="img/901.png " />
+							</div>
+							<div class="row col-xs-12 col-sm-9 col-md-8 ">
+								<div class="col-xs-12 col-sm-12 col-md-12 foot_nav ">
+									<ul>
+										<a href="#">
+											<li>公司简介</li>
+										</a>
+										<a href="#">
+											<li>联系方法</li>
+										</a>
+										<a href="#">
+											<li>商务合作</li>
+										</a>
+										<a href="#">
+											<li>客服中心</li>
+										</a>
+										<a href="#">
+											<li>招聘信息</li>
+										</a>
+										<a href="#">
+											<li>友情链接</li>
+										</a>
+										<a href="#">
+											<li>关于我们</li>
+										</a>
+										<a href="#">
+											<li>在线销售</li>
+										</a>
+										<a href="#">
+											<li style="border: none;">其他游戏系列</li>
+										</a>
+									</ul>
+								</div>
+								<div class="col-xs-12 col-sm-10 col-md-10 foot_words ">
+									<a>
+										<li>地址：北京某某街00号某某国际中心0000 电话：010-0000000</li>
+									</a>
+									<a>
+										<li>传真：010-0000000 Email：xxx123456@126.com</li>
+									</a>
+									<a>
+										<li>Copyright 2013-2015 某某网版权所有 京ICP备0000号 </li>
+									</a>
+									<a>
+										<li> 易汀 15079966961 </li>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div><span>&nbsp;</span></div>
+			</div>
+		</center>
+	</body>
+
+</html>

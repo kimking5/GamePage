@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="ie6-8"><![endif]-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS+Js制作的一款响应式导航条-前端开发-BeyondWeb.cn</title>
+	<style type="text/css">
+		
+		
+		@media screen and (min-width: 1310px) and (max-width:1640px){
+		.main{width: 983px;}
+		.navBar{width:100%;border-bottom: 4px solid red;}
+		.nav {width: 983px; height: 38px;}
+		.nav ul li a img{padding-right: 20px;}
+		.nav ul li {float: left; width: auto;}
+		.nav ul li a {padding: 0 10px 0 10px;}//导航之间的间距
+		.nav ul li.current {background: #f60;}
+		.nav ul li:hover a {text-decoration: underline;}
+		.nav ul li.current:hover a {color: #fff;}
+		.toppage{width: 983px;}
+		.para_ten{width:209px;height: 200px;background: url(../img/906.png) no-repeat;background-size:contain;float: left;}
+		.guide_twp{width:648px;height: 176px;margin-left:283px;}
+		.guide_twp ul li{display: inline; }
+		.pare_gam{width:219px; height:10%; background-image: url(../img/908.png);position: absolute;}
+		.para_dra{width:320px;height: 155px;background: url(../img/911.jpg) no-repeat center;background-size:contain;float: left;margin-left: 60px;margin-top: 50px;}
+		.game_news{width:320px;height: 170px;float: right;margin-top: 50px;}
+		.nav .title {display: none;}
+	}
+	@media screen and (min-width: 983px) and (max-width:1320px){
+		.main{width: 72%;}
+		.navBar{width:100%;border-bottom: 4px solid red;}
+		.nav {width: 983px; height: 38px;}
+		.nav ul li a img{padding-right: 20px;}
+		.nav ul li {float: left; width: auto;}
+		.nav ul li a {padding: 0 10px 0 10px;}//导航之间的间距
+		.nav ul li.current {background: #f60;}
+		.nav ul li:hover a {text-decoration: underline;}
+		.nav ul li.current:hover a {color: #fff;}
+		.toppage{width:100%;}
+		.para_ten{width:25%;height: 200px;background: url(../img/906.png) no-repeat;background-size:contain;float: left;}
+		.guide_twp ul li{display: inline; }
+		.pare_gam{width:24%; height:10%; background-image: url(../img/908.png);position: absolute;}
+		.para_dra{width:32%;height: 155px;background: url(../img/911.jpg) no-repeat center;background-size:contain;float: left;margin-left: 60px;margin-top: 50px;}
+		.game_news{width:32%;height: 170px;float: right;margin-top: 50px;}
+		.nav .title {display: none;}
+		.guide_twp{width: 68%;height: 70px;position: absolute;margin-left: 12%;}
+		.space_guide{width:68%;height: 22px;background-color: #01a969;}
+		.guide_twp_2{width: 68%; height: 45px;background-color: #3fcf99;}
+		.guide_twp_2 ul {list-style: none; width: auto;}
+		.guide_twp_2 ul li {display: inline; padding: 10xp 0;}
+		.guide_twp_2 ul li a {border-right: 1px solid #4e4e4e; padding:0 8px;font-size: 16px; color: #4e4e4e;text-decoration: none; }
+	}
+
+	@media screen and (min-width: 640px) and (max-width:983px) {
+		.main{width: 100%;}
+		.navBar{width:100%;border-bottom: 4px solid red;background: #008000;}
+		.nav {width: 100%; height: 38px;}
+		.nav ul li a img{padding-right: 20px;}
+		.nav ul li {float: left; width: auto;}
+		.nav ul li a {padding: 0 8px 0 8px;}//导航之间的间距
+		.nav ul li.current {background: #f60;}
+		.nav ul li:hover a {text-decoration: underline;}
+		.nav ul li.current:hover a {color: #fff;}
+		.toppage{width: 100%;}
+		.nav .title {display: none;}
+		}
+	@media screen and (max-width: 640px) {
+		.main{width: 100%;}
+		.navBar {width:100%; margin-top: 0; height: auto; background: #ffffff;}
+		.nav {width: auto; height: auto;}
+
+		.nav ul li {margin-top: 1px; width: 100%; text-align: center; min-width: 100px; color:#fff; background: #333;display: block;}
+		.nav ul li a{color: #fff;font-size: 15px;}
+		.nav ul li a:active,
+		.nav ul li a:hover {background: #CCCCCC;color: black;}
+
+		.toppage{display:none;}
+		.nav .title {position: relative; width: 100%; height: 38px; border-top: 1px solid #444; background: #4E4E4E; text-align: center; font:normal 20px/35px "Microsoft YaHei", arial, serif; letter-spacing: 2px;}
+		.nav .title a {color: #f60; text-decoration: none;}
+		.nav .title .btn {position: absolute; right: 10px; top: 0; width: 34px; height: 34px; padding: 2px; background: url(btn.png) center center no-repeat; cursor: pointer;}
+	}
+	* {margin: 0; padding: 0;}
+	body {font: 14px/22px "宋体", arial, serif; background-color: #CCCCCC;}
+
+	.navBar { width: 100%; height: 36px; background: #ffffff;}
+	.nav {margin: 0 ; border: 0px solid #ccc;}		
+	.nav ul {list-style: none; width: auto;}
+	.nav ul li {padding: 7px 0; }
+	.nav ul li a {display: block; padding: 0 7px;border-right: 1px solid #4e4e4e; font-size: 14px; color: #4e4e4e;text-decoration: none; }
+	.toppage{width: 100%;background: url(../img/903.jpg);background-size: contain;/*width:100%;*/height: 449px;}
+	
+	.para_ten{width:25%;height: 200px;background: url(../img/906.png) no-repeat;background-size:contain;float: left;}
+	.guide_twp_img{width: 70%;height: 176px;background: url(../img/907.png) no-repeat;background-size:contain;float:right;border-bottom: 10px solid #F12B0E;}
+	.pare_gam{width:24%; height:150px; background: url(../img/908.png) no-repeat;background-size:contain;position: absolute;float: left;margin-top: 10%;}
+	.para_dra{width:32%;height: 170px;float: right;margin-top: 5%;}
+	.medpage{width: 100%;height: 537px;background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#f9f2bc), to(#bee57e));}
+	.para_log{width: 219px; height: 65px; background-image: url(../img/904.jpg);float: left;}
+	.para_sto{width: 254px;height: 330px;background-image: url(../img/905.png);float: left;position: absolute;margin-top: 65px;}
+	.game_gao{width:370px;height: 240px;float: left;margin-left: 50px;margin-top: 20px;}
+	.game_gao1{width: 370px;height: 240px; background-image: url(../img/914.jpg);position: absolute;}
+	.game_gao2{width: 112px;height: 201px;background-image: url(../img/915.png);position: absolute;margin-left: 256px;}
+	.game_vid{width:320px;height: 225px;border: 1px solid #000000;float: right;margin-top: 20px;}
+	.game_cut{width:330px;height: 130px;border: 1px solid #000000;float:left;position:absolute ;margin-left: 280px;margin-top: 270px;}
+	.game_dow{width: 357px; height: 180px; background-image: url(../img/920.png);float: right;}
+	.botpage{width:983px; height: 142px;background-image: url(../img/921.png);position: absolute;margin-top: 420px;}
+	.fotpage{width: 983px;height: 130px;background-image: url(../img/902_副本.jpg);background-color: #4E4E4E;}
+	
+	.user_log{}
+	
+	.space_guide{width:70%;height: 22px;background-color: #01a969;}
+
+	.guide_twp{width: 70%;height: 70px;position: absolute;margin-left: 14%;}
+	.guide_twp_2{width: 70%; height: 45px;background-color: #3fcf99;}
+	.guide_twp_2 ul {list-style: none; width: auto;}
+	.guide_twp_2 ul li {display: inline; padding: 10xp 0;}
+	.guide_twp_2 ul li a {border-right: 1px solid #4e4e4e; padding:0 10px;font-size: 20px; color: #4e4e4e;text-decoration: none; }
+	
+	.game_news{width: 32%;}
+	.news{width: 100%;height: 32px;border-top: 1px solid black;}
+	.span1{line-height:32px;margin-left:1%;float: left;color: green;font-family: "微软雅黑";font-weight: bold;font-size: 17px;}
+	.span2{line-height:32px;float: left;color: black;font-family: "微软雅黑";font-weight: bold;font-size: 17px;}
+	.span3{line-height:32px;float: right;color: black;font-family: "微软雅黑";font-weight: bold;font-size: 10px;}
+	.news_words{width: 100%;height: 130px;border-top: 2px solid black;}
+	.news_words img{width:35%;float: left;margin-left: 1%;margin-top: 1%;}
+	.news_words span{width: 60%;float: left;margin-top: 1%;font-size: 10px;color: #5a6542;}
+	.news_words a{font-size: 8px;color:#5a6542;}
+	.news_words_1{width: 100%;height:15px;float: left;line-height: 15px;margin-top: 2%;}
+	.news_words_1 a{margin-left:1%;float: left;border-right: 1px solid gray;}
+	.news_words_1 img{width:100%;margin-top: 0px;}
+	.news_words_2{width: 100%;height:15px;float: left;line-height: 15px;margin-top: 2%;}
+	.news_words_2 a{margin-left:1%;float: left;border-right: 1px solid gray;}
+	.news_words_2 img{width:100%;margin-top: 0px;}
+	</style>
+	<script type="text/javascript">
+		var $$ = function (id) {
+			return document.getElementById(id);
+		}
+		
+		var move = function (obj, target) {
+			var timer;
+			clearInterval(timer);
+			timer = setInterval(function () {
+				var speed = (target - obj.offsetTop)/3;
+				speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+				if (Math.abs(obj.offsetTop - target) < 4) {
+					clearInterval(timer);
+					obj.style.marginTop = target + "px";
+				} else {
+					obj.style.marginTop = obj.offsetTop + speed + "px";
+				}
+			}, 30);
+
+		}
+
+		var toggle = function (menuId, btnId) {
+			var menu = $$(menuId);
+			var btn = $$(btnId);
+			var countNum = 0;
+			var menuHeight = menu.offsetHeight;
+			menu.style.marginTop = - menuHeight + "px";
+			btn.onclick = function () {
+				if (countNum === 0) {
+					move(menu, 0);
+					countNum = 1;
+				} else {
+					move(menu, -menuHeight);
+					countNum = 0;
+				}
+			}
+		}
+
+		onload = function () {
+			if ($$("btn")) {
+				toggle("menu", "btn");
+			} else {
+			}
+		}
+
+		onresize = function () {
+			location.reload();
+		}
+
+	</script>
+</head>
+<body><center>
+	<div class="main">
+	<div class="navBar">
+		<div class="nav">
+			<ul id="menu">
+				<li style="padding: 0 0;"><a style="border: none;"><img src="../img/901.png" /> </a></li>
+				<li><a href="#" title="">博客</a></li>
+				<li><a href="#" title="">视频</a></li>
+				<li><a href="#" title="">音乐</a></li>
+				<li><a href="#" title="">游戏</a></li>
+				<li><a href="#" title="">娱乐</a></li>
+				<li><a href="#" title="">图酷</a></li>
+				<li><a href="#" title="">相册</a></li>
+				<li><a href="#" title="">社区</a></li>
+				<li><a href="#" title="">体育</a></li>
+				<li><a href="#" title="">时尚</a></li>
+				<li><a href="#" title="">商城</a></li>
+				<li><a style="border: none;" title="">俱乐部</a></li>
+			</ul>
+
+			<!--判断浏览器是否是IE9,IE10或者是非IE浏览器-->
+			<!--[if (gt IE 8) | !(IE)]><!-->
+			<h1 class="title" id="title">
+				<!--<a href="http://beyondweb.cn/" target="_blank" title="前端开发-BeyondWeb.cn"></a>-->
+				<span class="btn" id="btn"></span>
+			</h1>
+			<!--<![endif]-->
+		</div>
+	</div>
+	<div class="toppage">
+		<div class="para_ten"></div>
+		<div class="guide_twp">
+			<div class="space_guide"></div>
+			<div class="guide_twp_2">
+			<ul>
+				<li><a>首页</a></li>
+				<li><a>游戏先驱</a></li>
+				<li><a>游戏社区</a></li>
+				<li><a>队伍</a></li>
+				<li><a>下载</a></li>
+				<li><a style="border: none;">帮助服务</a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="guide_twp_img"></div>
+		<div class="pare_gam"></div>
+
+		<div class="game_news">
+			<div class="news">
+				<span class="span1">游戏</span><span class="span2">新闻</span><span class="span3">MORE+</span>
+			</div>
+			<div class="news_words">
+				<img src="../img/912.jpg" />
+				<span>锦瑟无语，人亦忘言。光阴荏苒，时光丝毫不会因为我们的挽留而放慢他的脚步。</span>
+				<div class="news_words_1"><a style="border: none;"><img src="../img/913.png" /></a><a href="#">[图文]&nbsp;游戏通关操作全解析</a><a style="border: none;float: right;">15-05-01</a> </div>
+				<div class="news_words_2"><a style="border: none;"><img src="../img/913.png" /></a><a href="#">[公告]&nbsp;近期关于游戏无法登陆的说明</a><a style="border: none;float: right;">15-04-28</a> </div>
+			</div>
+			
+		</div>
+		<div></div>
+	</div>
+	<div class="medpage">
+		<div class="para_log"></div>
+		<div class="para_sto"></div>
+		<div class="game_gao"><div class="game_gao1"></div><div class="game_gao2"></div></div>
+		<div class="game_vid"></div>
+		<div class="game_cut"></div>
+		<div class="game_dow"></div>
+		<div class="botpage"></div>
+	</div>
+	
+	<div class="fotpage">
+		<div></div>
+	</div>
+	</center>
+	</div>
+	</body>
+</html>
